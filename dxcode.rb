@@ -1,22 +1,22 @@
 class Dxcode < Formula
   desc "A distinctive, URL-safe binary encoder with the signature `dx` prefix"
   homepage "https://dxc.dogxi.me"
-  version "2.2.0"
+  version "2.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/dogxii/dxcode/releases/download/v2.2.0/dxcode-v2.2.0-aarch64-apple-darwin.tar.gz"
+      url "https://github.com/dogxii/dxcode/releases/download/v2.3.0/dxcode-v2.3.0-aarch64-apple-darwin.tar.gz"
       sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     end
     on_intel do
-      url "https://github.com/dogxii/dxcode/releases/download/v2.2.0/dxcode-v2.2.0-x86_64-apple-darwin.tar.gz"
+      url "https://github.com/dogxii/dxcode/releases/download/v2.3.0/dxcode-v2.3.0-x86_64-apple-darwin.tar.gz"
       sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
     end
   end
 
   on_linux do
-    url "https://github.com/dogxii/dxcode/releases/download/v2.2.0/dxcode-v2.2.0-x86_64-unknown-linux-gnu.tar.gz"
+    url "https://github.com/dogxii/dxcode/releases/download/v2.3.0/dxcode-v2.3.0-x86_64-unknown-linux-gnu.tar.gz"
     sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
   end
 
