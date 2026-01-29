@@ -24,6 +24,21 @@ class Dxcode < Formula
     bin.install "dxc"
   end
 
+  def caveats
+    <<~EOS
+      dxcode CLI 已安装成功! (Native Rust binary)
+
+      使用方法:
+        dxc encode "Hello World"    # 编码
+        dxc decode "dxQBpX..."      # 解码
+        dxc check "dxQBpX..."       # 检查是否有效
+        dxc info                    # 显示编码信息
+        dxc --help                  # 查看帮助
+
+      更多信息: https://dxc.dogxi.me
+    EOS
+  end
+  
   test do
     assert_match "dxcode", shell_output("#{bin}/dxc --help")
     encoded = shell_output("#{bin}/dxc encode Hello").strip
